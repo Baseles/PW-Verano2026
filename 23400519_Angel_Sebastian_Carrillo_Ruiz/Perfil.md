@@ -1,4 +1,6 @@
 
+<img src="https://avatars.githubusercontent.com/u/211413639?v=4" width="150" alt="Foto de perfil de Carrillo Angel" />
+
 # 👋 Hola, soy Carrillo Ruiz Angel Sebastian 
 
 ## 🎓 Información general
