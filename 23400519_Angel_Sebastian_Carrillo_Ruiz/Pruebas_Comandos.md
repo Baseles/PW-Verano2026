@@ -1,5 +1,5 @@
 
-    # Pruebas de comandos
+# Pruebas de comandos
 
 - para ver que paso siempre se usa es el git status desde la terminal ya sea de visual, powershell o tambien desde el git bash.
 
@@ -21,4 +21,48 @@
 
 > git push
 
+ ## Aqui agregare un ejemplo de lo que va apareciendo durante los comandos
+
+> con el git status
+
+ PS C:\Users\aseba\Desktop\Cosas\ProgWeb\PW-Verano2026> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        23400519_Angel_Sebastian_Carrillo_Ruiz/Pruebas_Comandos.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+> git add Pruebas_Comandos.md
+
+- no salio nada pero solo da como siguente comando mientras no aparezca que no existe todo bien.
+
+PS C:\Users\aseba\Desktop\Cosas\ProgWeb\PW-Verano2026\23400519_Angel_Sebastian_Carrillo_Ruiz> git add Pruebas_Comandos.md                 
+
+> git commit -m 
+
+PS C:\Users\aseba\Desktop\Cosas\ProgWeb\PW-Verano2026\23400519_Angel_Sebastian_Carrillo_Ruiz> git commit -m "Agregue informacion de lo que puede hacer los primeros 4 comandos mas basicos de git hub desde la terminal de visual que son para ver que cambios se hicieron, aplicar cambios, guardar con mensaje y publicarlo"
+[main 7710176] Agregue informacion de lo que puede hacer los primeros 4 comandos mas basicos de git hub desde la terminal de visual que son para ver que cambios se hicieron, aplicar cambios, guardar con mensaje y publicarlo
+ 1 file changed, 24 insertions(+)
+ create mode 100644 23400519_Angel_Sebastian_Carrillo_Ruiz/Pruebas_Comandos.md
+PS C:\Users\aseba\Desktop\Cosas\ProgWeb\PW-Verano2026\23400519_Angel_Sebastian_Carrillo_Ruiz> 
+
+> git push
+
+PS C:\Users\aseba\Desktop\Cosas\ProgWeb\PW-Verano2026\23400519_Angel_Sebastian_Carrillo_Ruiz> git push
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1.18 KiB | 404.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:Baseles/PW-Verano2026.git
+   5011fc0..7710176  main -> main
+
+---
+
+## Como funcionan los caracteres especiales en codigo y como se vera en preview
 
