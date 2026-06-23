@@ -11,12 +11,14 @@
 ## 💻 Intereses
 - Redes
 - Programacion Backed
+- active directory 
   
 
 ## 🛠 Tecnologías que conozco
 - Java
 - MySQL, SQLServer
 - Cisco packet tracer
+- Windows Server
 
 ## 📫 Cómo contactarme
 - Correo: ansecarrilloru@ittepic.edu.mx
