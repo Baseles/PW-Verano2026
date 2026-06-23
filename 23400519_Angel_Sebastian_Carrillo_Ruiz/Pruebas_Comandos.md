@@ -78,3 +78,15 @@ To github.com:Baseles/PW-Verano2026.git
 
    - Para texto en linea / resaltado se usan acentos graves `Texto`
 
+   - Para los encabezados se usan los gatos (#) este mas mas que nada entre mas tenga mas pequeño sera el encabezado 
+
+  > como puede ser #Encabezado primario, ##Encabezado secundario, ##terciario
+
+  # Encabezado primario
+
+  ## Encabezado secundario
+
+  ### Encabezado terciario
+
+
+  
