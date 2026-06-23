@@ -3,7 +3,7 @@
 
 - para ver que paso siempre se usa es el git status desde la terminal ya sea de visual, powershell o tambien desde el git bash.
 
- > Funcioan como una terminal de linux que es mejor en verdad
+ > Funcioan como una terminal de linux que es mejor en verdad a pero para abrir la terminal aqui es diferente es ctl + ñ esta raro luego vere como le cambio 
 
  - otra cosa es que despues de ver si se aplicacion cambios con el git status podemos hacer es ya aplicar los cambios que queremos con el comando git add . o en este caso git add Pruebas_Comandos.md
 
@@ -51,6 +51,8 @@ PS C:\Users\aseba\Desktop\Cosas\ProgWeb\PW-Verano2026\23400519_Angel_Sebastian_C
 
 > git push
 
+- y este en verdad nunca se me tiene que olvidar por que si no lo hago no se va publicar nada de nada 
+
 PS C:\Users\aseba\Desktop\Cosas\ProgWeb\PW-Verano2026\23400519_Angel_Sebastian_Carrillo_Ruiz> git push
 Enumerating objects: 6, done.
 Counting objects: 100% (6/6), done.
@@ -63,6 +65,3 @@ To github.com:Baseles/PW-Verano2026.git
    5011fc0..7710176  main -> main
 
 ---
-
-## Como funcionan los caracteres especiales en codigo y como se vera en preview
-
