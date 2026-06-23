@@ -70,4 +70,11 @@ To github.com:Baseles/PW-Verano2026.git
 
    ## Estilos basicos de texto
    
-   
+   - En negritas es mas que nada poner 2 asteriscos **Texto**
+
+   - En cursiva seria solo un asterisco *texto*
+
+   - En Tachado se rodea el texto con virglillas dobles (~~Texto~~).
+
+   - Para texto en linea / resaltado se usan acentos graves `Texto`
+
