@@ -65,3 +65,9 @@ To github.com:Baseles/PW-Verano2026.git
    5011fc0..7710176  main -> main
 
 ---
+
+ # Estilos de texto
+
+   ## Estilos basicos de texto
+   
+   
