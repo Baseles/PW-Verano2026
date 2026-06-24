@@ -68,6 +68,9 @@ To github.com:Baseles/PW-Verano2026.git
 
 este lo que hace es cambiar de rama como si fuera un usuario
 
+  > git checkout -b [nombre de la rama]
+    este lo que hace es que ademas de cambiar el parametro -b lo que hace es que cambia y crea la rama al mismo tiempo.
+
 > git branch
 
 Este te muestra las ramas que hay en el repositorio
@@ -84,6 +87,18 @@ Este es mas que nada para que cuando inicies en otra rama con el checkout este p
 Este funciona como el push normal que conocemos pero este a diferencias de los demas publica o importa en el github la rama creada que se halla hecho por ejemplo al principio solo tenia la rama de main que es principal que todos tienen, pero despues cree una nueva con el comando **(git branch (nombre de la rama nueva))**
 
 `Algo que aclarar que para eleminar una rama especifica es con el comando (git branch -d nombre-de-la-rama) y despues tenemos que aplicar los cambios de delete en el github con el comando (git push origin --delete nombre_rama) este mas que nada para eliminarlo de nuestro repositorio de github.`
+
+
+> git stash
+
+el area de stash, digamos que si estamos en algo a medias podemos usar este comando que guardado como oculto los archivos se quedarian sin cambios, **Solo se puede usar en archivos ya existentes en el repositorio**
+
+> git stash
+
+
+> git stash pop 
+
+Lo que pasa aqui es que recupera esos archivos que dejemamos como en espera con el git stash y podemos seguir con lo que estabamos haciendo.
 
 
 ---
