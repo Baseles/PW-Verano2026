@@ -44,7 +44,7 @@ PS C:\Users\aseba\Desktop\Cosas\ProgWeb\PW-Verano2026\23400519_Angel_Sebastian_C
 > git commit -m 
 
 PS C:\Users\aseba\Desktop\Cosas\ProgWeb\PW-Verano2026\23400519_Angel_Sebastian_Carrillo_Ruiz> git commit -m "Agregue informacion de lo que puede hacer los primeros 4 comandos mas basicos de git hub desde la terminal de visual que son para ver que cambios se hicieron, aplicar cambios, guardar con mensaje y publicarlo"
-[main 7710176] Agregue informacion de lo que puede hacer los primeros 4 comandos mas basicos de git hub desde la terminal de visual que son para ver que cambios se hicieron, aplicar cambios, guardar con mensaje y publicarlo
+[main 7710176] Agregue informacion de lo que puede hacer los primeros 4 comandos mas basicos de git hub desde la terminal de visual que son para ver gque cambios se hicieron, aplicar cambios, guardar con mensaje y publicarlo
  1 file changed, 24 insertions(+)
  create mode 100644 23400519_Angel_Sebastian_Carrillo_Ruiz/Pruebas_Comandos.md
 PS C:\Users\aseba\Desktop\Cosas\ProgWeb\PW-Verano2026\23400519_Angel_Sebastian_Carrillo_Ruiz> 
@@ -63,6 +63,28 @@ Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
 remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To github.com:Baseles/PW-Verano2026.git
    5011fc0..7710176  main -> main
+
+> git checkout (nombre del checkout o las ramas)
+
+este lo que hace es cambiar de rama como si fuera un usuario
+
+> git branch
+
+Este te muestra las ramas que hay en el repositorio
+
+> git pull 
+Este lo que hace es que cuando crear archivos desde github o subes archivos y no los tienes tu carpeta clonada por asi decirlo de tu equipo es que pasa los archivos de github a la carpeta clonada del repositorio.
+
+> git marge (nombre de la rama)
+
+Este es mas que nada para que cuando inicies en otra rama con el checkout este pueda subir los archivos que fueron creados en la otra rama y importarlos por asi decirlo en la rama actual que estes.
+
+> git push origin (nombre de la rama)
+
+Este funciona como el push normal que conocemos pero este a diferencias de los demas publica o importa en el github la rama creada que se halla hecho por ejemplo al principio solo tenia la rama de main que es principal que todos tienen, pero despues cree una nueva con el comando **(git branch (nombre de la rama nueva))**
+
+`Algo que aclarar que para eleminar una rama especifica es con el comando (git branch -d nombre-de-la-rama) y despues tenemos que aplicar los cambios de delete en el github con el comando (git push origin --delete nombre_rama) este mas que nada para eliminarlo de nuestro repositorio de github.`
+
 
 ---
 
