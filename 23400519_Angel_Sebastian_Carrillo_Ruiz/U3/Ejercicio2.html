@@ -1,165 +1,253 @@
 <!DOCTYPE html>
 
-<html lang = "es">
+<html lang="es">
 
-    <head>
-        <meta charset="UTF-8">
-        <title> Estructura base </title> <!-- Aqui cambia el titulo de la pagina solamente-->
-        
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <title> Estructura base </title> <!-- Aqui cambia el titulo de la pagina solamente-->
+
+    <style>
+        body {
+            background: black;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .texto {
+            text-align: center;
+
+        }
+
+        .titulo {
+            text-align: center;
+        }
+
+        img {
+            width: 500px;
+            border-radius: 10px;
+            display: block;
+            margin: auto;
+        }
+
+        h2,
+        h3 {
+            color: rgb(97, 236, 97);
+            text-align: left;
+            background: rgb(23, 78, 48);
+            border-radius: 10px;
+            width: 250px;
+            text-align: center;
+        }
 
 
-    <body>
 
-        <h1> Enanitos verdes </h1>
+        a:hover,
+        .enlaces {
+            color: aqua;
+            cursor: pointer;
+        }
 
-        <p>
-            La agrupación nació en noviembre de 1979 fundada por Horacio "Marciano" 
-            Cantero (voz y bajo), Felipe Staiti (guitarra) y Daniel Piccolo (batería).
-            El curioso nombre del grupo proviene de una leyenda urbana local sobre seres extraños vistos en el famoso paraje de Puente del Inca.
-            A lo largo de su historia, se convirtieron en un referente fundamental de la música en Latinoamérica, destacando por sus letras sobre experiencias cotidianas, el amor y los desencuentros.
-        </p>
+        a,
+        .enlaces,
+        ul,
+        ol {
+            color: rgb(97, 236, 97);
+            text-decoration: none;
+            text-align: center;
+        }
 
-        <h2> Indice </h2>
+        hr {
+            background: white;
+        }
 
-        <ol>
-            <li> <a href= "#Fografias del grupo" > Fotografias del grupo </a></li>
-            <li> <a href = "#Integrantes" > Integrantes </a> </li>
-            <li> <a href = "#Discografia" > Discografia </a></li>
-            <li> <a href = "#Enlaces" > Enlaces </a> </li>
-        </ol>
+        table {
+            width: auto;
+            border-collapse: collapse;
+            text-align: center;
+            border: rgb(23, 78, 48);
+            color: rgb(125, 248, 201);
+            display: flex;
+            justify-content: center;
+        }
 
-        <h2 id = "Fotografias del grupo" > Fotografias del grupo </h2>
 
-        <img
-        width="500"
-        src = "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAA0JCgsKCA0LCgsODg0PEyAVExISEyccHhcgLikxMC4pLSwzOko+MzZGNywtQFdBRkxOUlNSMj5aYVpQYEpRUk8BDg4OExETJhUVJk81LTVPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT//AABEIAKQA9gMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAABAgADBAUGB//EADcQAAEEAQMCBAMGBgEFAAAAAAEAAgMRBAUhMRJBE1FhcQYiMhQjgZGhwUJSYrHh8NEVFkNy8f/EABgBAQEBAQEAAAAAAAAAAAAAAAABAwIE/8QAHhEBAQEBAQADAQEBAAAAAAAAAAECEQMSITFBUSL/2gAMAwEAAhEDEQA/APIkJggUWqixqsCrarGoHanCUJmoHCNIBMCoIojSNIIFEaRpAhRARpEBBKQpOpSCulKTkIEIEpFQhRBFEVECoFPSFIEtAp6S0grKCdwSUgUpSnISEIFKCJUQUFFqiIVDtVgVYTtQWBO0JAnaUDhNVpHODGFzjQG64+VqMz3/AHMhY0HgDlQdwCuRSK81HqGTE7q8Qu9Hbrt6fmfamO6qDm9kGxFBG0ApQooFAQooOEUAtLaakCEClBGkEBRCinZBFECh2QQoFRRAhSkJilJQKUqYoIEPKihRQZkUBumrZUM1OFSDRTdSC7qRDlR1KOeGNL3HYKDPqeQSfCB2Q0PCZn5wbI1zomgl1beyyxmKXOjfkbROf829bL3OjaFinHfE174+T1dfSTe43/Rcb1xr5Y+VedzPhyV2WIsSNwPNHsPVc/w8jS9QbDLXUNnV5L6PjYEmkYU7ocs5Bcba2X5gCTXPK+eazNPLrL3ZUbGStFODAQPeiVzjVt469cZme/1vjyQ7utcbw4LgtJDtuF0sZ5oLVg3oFQGwFEBCKUC/NWCKTpLgwkDclAqhQBBFqFBEhTEqt7w3lFOCs2ZnRYhDXAukIugg7IAKbTNK/wCq5fW/I6WuebaBuAP7LnVkn2uc3V5GA6xKX02IAccLTh5/jv8ACkj8N/ajYK9034U02PGDBE0kdybK8tr2mQaflNLKaHdvI+aznrLeNb48nVVhKVlE/mrmvDlswFyVEoIIlKJQKBCigUUGZqsVbSrBwqEclRdykukDj8lhysmNzgwPLq5DfNUZmU+R5jjNMG3usvbiqUV0dKwzqWpQ4zNnE/ovpGlsY6Z+K4/PFuANiRQr918rxZ5cbIZPBIY5WG2uHZfS2sydS0rF1BuMIs10XUXtf0+lj35pYev8r0eH+B8Q6i3EDnNyJGRghz2OAJe4HZrfU1vxsF88kmlzMufInJ8WU9V/sr9fyM9+ovjzpS50TukDah+CyY87eoCRu/YrTGeTrP1328bRut2LwFiaCTVLr6Fi/as6Jkkcj4A9pm6ezLAu+y7Z/taGkdKl2QL5K06xFhYrgMMZNF5p0hHSW+g58lgxcfKz5fBxIXyvPPT2HqeynZzq3Nl414rH6hcGFC4FrqfK/YAfuurDoMuGWP8AHdOAd2u2pdXQtKn0vFjjyZWPlcSXEGw3/lCfXG5GSNP0vHMsr3+GciVtRRnfnufbusNa1dfT05xmZcDV8X7MfFjBr+KMbkevsueyRrxYO3Y+a9vp+A3AfIZJXTPf9csor+3A9F86lecTU8qHoLGCZ/Q0iqb1Hp/Slpjfy+mO8fGdbncLHkuNrU14e2wsmSFoyY+re7Xe+EMbMGTkTY4Z8zhXXdVX/K8+dnL0XwrqMkOS2Dqa1oaegEVdm+Vx6T/lp5XmntWy58+KYvEiZO1xa5zWUPyv181w/iLSJsrHgifIHZBlFOA4Fb7E+Xmt2JNJ4ReHG+skRufwT3sBYteysmTF+5kIymtLgWdq/wB/ReWfseyz6eLI6XFv8ppWQkqhrw8dTd733V8K9rwVotBRREAoFEpSUClRC1EGcFG1XalqhyUp/RC1CdjfHdQcU/UfK1EHfWQFO6LBqvmH4r2vwLq/SyTTMkkxNBlivt/MP3/NeLPCjXvZZY4tsEWDW3kudZmpyus6ub2NOr5n27U8jKHEryR7dliUUO3C6k59Obe3rr47ra0+YBXstDgfiaU7Lka1njPDm9R36W8bepK8E2ZscMY/iI78Lu5HxC3NxoI4ur7S4BhHTQYPQ91xuWzkaeVkva06pOJsglri9rRXUdrK9l8MywS6ePBgETQ3qcxvBPqV4Ustt+XZer+HZxp3wll5xBd4bXmgb4XPpOSR156+VtedzdYzsr4ge77ZJixOeWud1DpaBe3p/le2xnYp8EwyskZF0u6Gt36uwJ7kf/V8lyJnOaeo247k+ZXX0H4hkwc2I5j3PiH1E2e2yusfX0efpO/b6nPIOgFw+p1Ee68n8Z6bCNPGe57Ip4zTSd/E/p9+60O13HlYzUJnOiw2CxYNyO8mjuvG6/rk+t5oke3w4I9oog669T6rHGL8mnrvPx4mnZIeCx7gHjjta0ZG4XDNLVBmGiyR3sV6nkM8U5V/aXQSRub/ADDcHdJNkXIAB8vchUzG/YoR9Jw5tVdjtha/FG2zy1xc7yNcLm67qMOjxOjE3j58go/0+p8vQLyQ1nVGwCBufO2MbANdW39/1WNgL5ereydye6ynl99b32vORdHOS35S5rx/MOVtx8pv/kb+IWE8mv8Ad1a36a8tlqwdVr2PbbHWmXMx5PDf6O5W1soOyC0lIUbtIUEQUtRBktS0tqWqGU52PdQKKDjHZ/sSFDzuny29GS4dj835pHcoo+Sh4pLfooXD1QRQ7pmSBjr6Qf8A2CkoDZDRDgReyBb8zxsFs0po+1dZ4aP1WIC1rxJAzhEdjUXyR4ZdE/pAPzedHyU/7kzo9HfpsYiEMo6XO6bcs0k/VA4He2lc9hvmksl/VmrPwrndUjQeAN00bOuQA8d0PDkBEjmODH30urY1yrY/kYT/ADFBbNKSxsZcXBgIaPIeipai3Z1lBm6ILlW7cGj2TuKTugjD1RUeaTv+hvqqoT89eicmwB5KgWr4QKB9LWdaYh900+lKAuFB1+aIPzuH4pZDu0eZCUuAlPqFRZe59FoDjysrTcnu1XMdtSDWx+1J7WVjt1cDsoGJUS2ogyqIWpaoa1LQtAqDnZm+U8e39lTfYq6Y9WTIT51+SrHI9UUlI1QtON1Hce6CsLQ1jZI28grOFogN2EQpjDfX1SA9LuVtERcFW/HIdwgVr3OFWtmh6dNq2pxYMNtL7L31fQ0bkqiOLcImSXH8aOGRzGztDZOnbqb5e3on7Fj03xU7ExNPg03EDW9BpwsWQO5XmZKoNaQduyqaA0bABTtypmcXV+VG96/FParsXdo717quUJs0q3uoFMT2HKql+mu6B8X5pPYJifnchibEn0UP1lAVpiP3I/3usqvhd9070KA3czfIKuR1USmj538iVXJu02qLIngyCj2KvaacscHJ4taWk3ub2QXAq9h2Wa9lYxygutRLaiDMpaiVA1o2lSveGMc49gg50ji573eZUBAAS8o1fKKYcWo47BFK5FKrIjRBVZ2RumhHLpQP3I/JXmnbrnxPqitjHW1A+1VSomja9pcdiArCVXMahcgzxwOc0Evq0HREOI6+PRXQuHS32SONuJQVeGezv0RDXgVeytA2u/8AKAKAAAKqblWuKpf8zzSC3DAcac7pB2JrgdypMGtyJWsf1tDqa6qsDa/0S4xoPvsla69/NA6sjPyO91SrIuHBBYOXe1JH8UoD8p9Sg4npVEhG1nurQXA7kJIxtun5QXdgiCh2CW1BeCoqwVEFfUgXJCgCgtBVOWT4W3BO6a1XO77v8UGQEJrUod1KHZAQUrvqRpSggXlO2MEfMVAKTNOyBgA3ha4TsszRey0RjpCB3OWfKkpgYO6tJtY5zchQWwGun2UPJSwouNOQN2UCFoIC5VxgGUhOTYpW6VBFk6i1k5cGXZ6TRKd4snWb6C8XylbsF2/ic4v2mKDBjYyKBlFrR/Ff6/5XGIs8fgkvSzlEFWRnlU9J/qTMFXd/iiLCaY0pS66Fn8kzRYB8k5hlLPGEZ8IHp662BQS9vTzTsO/okqwi3YUguJS2ktS0FwKCDTsogoLkLS2paB7Vc+7R7prSSn5EFQRSXuoSgJKiVG0D2oCltRBoiKuc9ZoiruyA9SpMQc63O5VhQtAPlGwtAi/VQp46LUFYdSPUB3Cv8NhHzNB/BVuiiH8KCovb5hHBm8HNZIXFoB3NcKqSuqhwkQeoGHhZUn2iaeRweQ14bQqxsf2K4M8TseeSGQEPY4tPqlxsqSHqFktcKLb5Ck8z55TLI63mgdq4AA/spHVsosOxQc63GlWXlooIx7krpytYdl6zQZY4NNbHNGS13zGxz1na/wDe68rAxr5o2uAovaN+OV6HInDZtTiicOiExkBpsACu/wCC43OtPO8vWXW8XCibHkYIe1r5HMLP4RXl5Lk2r8zKM0kjGuBiMviNPrX+VmtWfjnXO/R7RCQJgq5OFELUQZyhaiiCAoSfQoogpR7IKIIooogIUB3UUQWR8rQOFFECuSlBRADwnj+k+6iiC20jyoogyv8AqKVRRAW8pioogBRj5KKiosH02fOlOtzGO6XEBwpwB2I25UUUAaSQjaiiBgjaKiCWooog/9k="
-        >
+        th {
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background: rgb(80, 191, 15);
+        }
 
-        <h2 id = "Integrantes" > Integrantes </h2>
+        td {
+            background: rgb(23, 78, 48);
+        }
 
-        <table border = "3">
-
-            <tr>
-                <th>Nombre </th> <!--Encabezado de la tabla-->
-                <th>Intrumentos </th>
-            </tr>
-
-            <tr>
-                <td>Marciano Cantero </td> 
-                <td>Bajo electrico </td>
-            </tr>
-
-            <tr>
-                <td>Felipe Staili </td> 
-                <td>Guitarra </td>
-            </tr>
-
-            <tr>
-                <td>Daniel Piccolo </td> 
-                <td>Bateria </td>
-            </tr>
-
-            <tr>
-                <td>Jota Morelli </td> 
-                <td>Bateria </td>
-            </tr>
-
-        </table>
-
-        <br>
-
-        <h2 id = "Discografia" > Discografia </h2>
-
-        <table border="2">
-
-            <tr>
-                <th> Titulo </th>
-                <th> Año </th>
-            </tr>
-
-            <tr> 
-                <td> En vivo </td>
-                <td> 2004 </td>
-            </tr>
-
-            <tr> 
-                <td> Big bang </td>
-                <td> 1994 </td>
-            </tr>
-
-            <tr> 
-                <td> Contra reloj </td>
-                <td> 1986 </td>
-            </tr>
-
-            <tr> 
-                <td> Habitaciones Extrañas </td>
-                <td> 1987 </td>
-            </tr>
-
-            <tr> 
-                <td> Tracción acústica </td>
-                <td> 1998 </td>
-            </tr>
-
-            <tr> 
-                <td> Carrousel </td>
-                <td> 1988 </td>
-            </tr>
-
-            <tr> 
-                <td> Amores lejanos </td>
-                <td> 2002 </td>
-            </tr>
-
-            <tr> 
-                <td> Guerra gaucha </td>
-                <td> 1996 </td>
-            </tr>
-
-            <tr> 
-                <td> Pescado original </td>
-                <td> 2006 </td>
-            </tr>
-
-            <tr> 
-                <td> Los enanitos verdes </td>
-                <td> 1984 </td>
-            </tr>
-
-        </table>
-
-        <br>
-
-        <h2 id = "Enlaces" > Enlaces </h2>
-
-        <ul>
-            <li> 
-                <a href = "https://es.wikipedia.org/wiki/Enanitos_Verdes"
-                title = "Informacion general de los enanitos verdes"
-                target="_blank" 
-                > Sitio Oficial </a>
-            </li>
-
-            <li> 
-                <a href = "https://es.wikipedia.org/wiki/Enanitos_Verdes"
-                title = "Informacion general de los enanitos verdes"
-                target="_blank" 
-                > Wikipedia </a>
-            </li>
+        li,
+        ol,
+        ul {
+            color: white;
+            display: block;
             
-            <li> 
-                <a href = "https://open.spotify.com/intl-es/artist/4TK1gDgb7QKoPFlzRrBRgR"
-                title = "Musica de enanitos verdes"
-                target="_blank" 
-                > Spotify </a>
-            </li>
+        }
+    </style>
+</head>
 
-        </ul>
 
-        <p>
-            Todos los derechos reservados.
-        </p>
+<body>
 
-    </body>
+    <h1 class="titulo"> Enanitos verdes </h1>
+
+    <p class="texto">
+        La agrupación nació en noviembre de 1979 fundada por Horacio "Marciano"
+        Cantero (voz y bajo), Felipe Staiti (guitarra) y Daniel Piccolo (batería).
+        El curioso nombre del grupo proviene de una leyenda urbana local sobre seres extraños vistos en el famoso paraje
+        de Puente del Inca.
+        A lo largo de su historia, se convirtieron en un referente fundamental de la música en Latinoamérica, destacando
+        por sus letras sobre experiencias cotidianas, el amor y los desencuentros.
+    </p>
+
+
+    <h2> Indice </h2>
+
+    <hr>
+
+    <ol class="enlaces">
+        <li> <a href="#Fografias del grupo"> Fotografias del grupo </a></li>
+        <li> <a href="#Integrantes"> Integrantes </a> </li>
+        <li> <a href="#Discografia"> Discografia </a></li>
+        <li> <a href="#Enlaces"> Enlaces </a> </li>
+    </ol>
+
+    <h2 id="Fotografias del grupo"> Fotografias del grupo </h2>
+
+    <hr>
+
+    <img width="500"
+        src="data:image/jpeg;base64,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">
+
+    <h2 id="Integrantes"> Integrantes </h2>
+
+    <hr>
+
+    <table border="3">
+
+        <tr>
+            <th>Nombre </th> <!--Encabezado de la tabla-->
+            <th>Intrumentos </th>
+        </tr>
+
+        <tr>
+            <td>Marciano Cantero </td>
+            <td>Bajo electrico </td>
+        </tr>
+
+        <tr>
+            <td>Felipe Staili </td>
+            <td>Guitarra </td>
+        </tr>
+
+        <tr>
+            <td>Daniel Piccolo </td>
+            <td>Bateria </td>
+        </tr>
+
+        <tr>
+            <td>Jota Morelli </td>
+            <td>Bateria </td>
+        </tr>
+
+    </table>
+
+    <br>
+
+    <h2 id="Discografia"> Discografia </h2>
+
+    <hr>
+
+    <table border="2">
+
+        <tr>
+            <th> Titulo </th>
+            <th> Año </th>
+        </tr>
+
+        <tr>
+            <td> En vivo </td>
+            <td> 2004 </td>
+        </tr>
+
+        <tr>
+            <td> Big bang </td>
+            <td> 1994 </td>
+        </tr>
+
+        <tr>
+            <td> Contra reloj </td>
+            <td> 1986 </td>
+        </tr>
+
+        <tr>
+            <td> Habitaciones Extrañas </td>
+            <td> 1987 </td>
+        </tr>
+
+        <tr>
+            <td> Tracción acústica </td>
+            <td> 1998 </td>
+        </tr>
+
+        <tr>
+            <td> Carrousel </td>
+            <td> 1988 </td>
+        </tr>
+
+        <tr>
+            <td> Amores lejanos </td>
+            <td> 2002 </td>
+        </tr>
+
+        <tr>
+            <td> Guerra gaucha </td>
+            <td> 1996 </td>
+        </tr>
+
+        <tr>
+            <td> Pescado original </td>
+            <td> 2006 </td>
+        </tr>
+
+        <tr>
+            <td> Los enanitos verdes </td>
+            <td> 1984 </td>
+        </tr>
+
+    </table>
+
+    <br>
+
+    <h2 id="Enlaces"> Enlaces </h2>
+
+    <hr>
+
+    <ul class="enlaces">
+        <li>
+            <a href="https://es.wikipedia.org/wiki/Enanitos_Verdes" title="Informacion general de los enanitos verdes"
+                target="_blank"> Sitio Oficial </a>
+        </li>
+
+        <li>
+            <a href="https://es.wikipedia.org/wiki/Enanitos_Verdes" title="Informacion general de los enanitos verdes"
+                target="_blank"> Wikipedia </a>
+        </li>
+
+        <li>
+            <a href="https://open.spotify.com/intl-es/artist/4TK1gDgb7QKoPFlzRrBRgR" title="Musica de enanitos verdes"
+                target="_blank"> Spotify </a>
+        </li>
+
+    </ul>
+
+    <p>
+        Todos los derechos reservados.
+    </p>
+
+</body>
