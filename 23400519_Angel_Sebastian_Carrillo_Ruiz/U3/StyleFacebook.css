@@ -1,51 +1,86 @@
-body{
+body {
     font-family: Arial, Arial, sans-serif;
     background: rgb(230, 229, 229);
-    display:flex;
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
-h1{
+h1 {
     color: blue;
-    font-size: 60px;
-
-}
-.portada{
-    display: block;
-    margin: auto;
-    display: block;
-    font-size: 25;
+    font-size: 70px;
 }
 
-.inicio_de_sesion{
-    text-align: center;
+.portada {
+    width: 450px;
+    margin-right: 80px;
+}
+
+.inicio_de_sesion {
     background: white;
-    margin-bottom: 70%;
-    margin: auto;
-    display: block;
+    width: 380px;
+    padding: 20px;
+    text-align: center;
 }
 
-.blogin{
+.blogin {
     background: blue;
     color: white;
     border-radius: 9px;
     text-align: center;
-    
+    display: block;
+    cursor: pointer;
+    padding: 5%;
+
 }
 
-.bnew{
+.bnew {
     background: rgb(8, 213, 8);
     color: white;
     border-radius: 9px;
     text-align: center;
+    display: block;
+    margin: auto;
+    padding: 4%;
+    width: auto;
 }
 
-.olvidoContraseña{
-  text-decoration: none;
+.olvidoContraseña {
+    text-decoration: none;
 }
 
-.informacion{
+.informacion {
     text-align: center;
 }
 
+input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    font-size: 16px;
+}
 
+@media (max-width: 800px){
+
+    body{
+        flex-direction: column;
+        padding: 20px;
+        height: auto;
+    }
+
+    .portada{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .inicio_de_sesion{
+        width: 100%;
+        max-width: 380px;
+    }
+
+}
