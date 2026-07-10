@@ -1,0 +1,178 @@
+.contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+body {
+    background: black;
+    font-family: "Segoe UI", Arial, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+}
+
+p {
+    color: white;
+}
+
+.text1 {
+    width: 100%;
+    max-width: 380px;
+    /* Todo el contenido se alineará a este ancho máximo */
+}
+
+.Img_X {
+    border: none;
+    width: 450px;
+    margin-right: 80px;
+    padding-right: 55px;
+}
+
+.Text_Sup {
+    text-align: left;
+    font-size: 50px;
+}
+
+
+.Logo_Apple {
+    width: 20px;
+}
+
+.Boton_Google {
+    border: none;
+    margin: 10px;
+    border-radius: 50px;
+    text-align: center;
+    display: block;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    width: 380px;
+    padding: 20px;
+    text-align: center;
+}
+
+.Boton_Apple {
+    border: none;
+    margin: 10px;
+    border-radius: 50px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    display: block;
+    align-items: center;
+    cursor: pointer;
+
+    width: 380px;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.Texto_inf {
+    color: gray;
+}
+
+.le_Azul {
+    color: rgb(1, 137, 190);
+}
+
+.b_Crear_Cuenta {
+    background: rgb(30, 135, 220);
+    color: rgb(255, 255, 255);
+
+    border: none;
+    margin: 10px;
+    border-radius: 50px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 380px;
+    padding: 20px;
+    text-align: center;
+}
+
+hr {
+    display: flex;
+    border: none;
+    height: 1px;
+    background-color: rgb(79, 79, 79);
+    width: 160px;
+}
+
+.O {
+    color: white;
+    display: flex;
+}
+
+.login {
+    border: 1px solid gray;
+    color: rgb(16, 148, 178);
+    background-color: black;
+
+    margin: 10px;
+    border-radius: 20px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    width: 380px;
+    padding: 20px;
+    text-align: center;
+}
+
+.pie_pag {
+    position: absolute;
+    bottom: 0;
+    right: 0%;
+    left: 0%;
+}
+
+.part_inf {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a, footer {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+
+    .contenido {
+        flex-direction: column;
+        padding: 20px;
+        height: auto;
+    }
+
+    body {
+        flex-direction: column;
+        padding: 20px;
+        height: auto;
+    }
+
+    .Img_X {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    form {
+        width: 100%;
+        max-width: 380px;
+
+    }
+
+}
