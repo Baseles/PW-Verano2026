@@ -100,13 +100,14 @@ eje4();
 
 function eje5() {
     let ventas = [];
-    let continuar = true;
 
-    do {
-        let vendedor = prompt("Nombre del vendedor:");
-        let producto = prompt("Nombre del producto:");
-        let cantidad = Number(prompt("Cantidad vendida:"));
-        let precio = Number(prompt("Precio unitario:"));
+    let numVentas = Number(prompt("¿Cuantas ventas deseas registrar?"));
+
+    for (let i = 1; i <= numVentas; i++) {
+        let vendedor = prompt("Venta " + i + " - Nombre del vendedor:");
+        let producto = prompt("Venta " + i + " - Nombre del producto:");
+        let cantidad = Number(prompt("Venta " + i + " - Cantidad vendida:"));
+        let precio = Number(prompt("Venta " + i + " - Precio unitario:"));
 
         ventas.push({
             vendedor: vendedor,
@@ -115,29 +116,22 @@ function eje5() {
             precio: precio,
             total: cantidad * precio
         });
+    }
 
-        continuar = confirm("¿Deseas registrar otra venta?");
-    } while (continuar);
-
-    // Total de ventas
     let totalVentas = ventas.length;
 
-    // Total de ingresos: map() para sacar los totales + reduce() para sumarlos
     let totalIngresos = ventas.map(v => v.total).reduce((acc, t) => acc + t, 0);
 
-    // Unidades vendidas por producto
     let unidadesPorProducto = {};
     ventas.forEach(venta => {
         unidadesPorProducto[venta.producto] = (unidadesPorProducto[venta.producto] || 0) + venta.cantidad;
     });
 
-    // Monto total por vendedor
     let ventasPorVendedor = {};
     ventas.forEach(venta => {
         ventasPorVendedor[venta.vendedor] = (ventasPorVendedor[venta.vendedor] || 0) + venta.total;
     });
 
-    // Vendedor con mayor monto
     let mejorVendedor = "";
     let mejorMonto = 0;
     for (let vendedor in ventasPorVendedor) {
