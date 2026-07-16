@@ -3,11 +3,11 @@
 
 // 1.- numeros iguales y si no cual es mayor
 function e1() {
-    let n1 = Math.floor(Math.random() * 100);
-    let n2 = Math.floor(Math.random() * 100);
+    let n1 = Math.floor(Math.random() * 100) + 1;
+    let n2 = Math.floor(Math.random() * 100) + 1;
 
-    console.log(n1);
-    console.log(n2);
+    console.log("primer numero: " + n1);
+    console.log("Segundo numero: " + n2);
     if (n1 == n2) {
         console.log("Los numeros son iguales")
     }
@@ -55,7 +55,7 @@ function e4() {
     for (let i = 1; i < 11; i++) {
         let n;
         do {
-            n = prompt("ingresa el número ${i}: (que sea del 1-100)")
+            n = Number(prompt("ingresa el número ${i}: (que sea del 1-100)"))
             if (n < 1 || n > 100 || n == null) {
                 console.log("Por favor ingrese un numero entre el 1 al 100")
             }
@@ -77,7 +77,7 @@ e4();
 function e5() {
     let ven;
     do {
-        ven = prompt("Por favor ingresa el monto de venta entre ($5,000 - $30,000): ")
+        ven = Number(prompt("Por favor ingresa el monto de venta entre ($5,000 - $30,000): "))
         if (ven == null || ven < 5000 || ven > 30000) {
             console.log("Por favor ingrese un monto valido usted ingreso: " + ven);
         }
