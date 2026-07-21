@@ -82,16 +82,21 @@ function eje4() {
         console.log("Numero ingresado: " + num)
         intentosUsados = i;
 
-
-        if (num === numAle){
+        if (num > numAle) {
+            console.log("Intenta con un numero menor")
+        } else {
+            console.log("Intenta con un numero mayor")
+        }
+        
+        if (num === numAle) {
             acierto = true;
             break;
         }
 
     }
-    if(acierto){
-        console.log("Bien ah acertado el numero: " + numAle + "Intentos: " + intentosUsados)
-    }else{
+    if (acierto) {
+        console.log("Bien ah acertado el numero: " + numAle + " Intentos: " + intentosUsados)
+    } else {
         console.log("Se te acabaron los aciertos man el numero era: " + numAle)
     }
 }
