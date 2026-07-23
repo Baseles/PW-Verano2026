@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3000/peliculas";
+const API_URL = "https://peliculas-api-nine.vercel.app/peliculas";
 
 let peliculas = [];
 let siguenteId = 1;
